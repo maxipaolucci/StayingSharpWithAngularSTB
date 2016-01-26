@@ -5,7 +5,18 @@
         <link rel="stylesheet" href="assets/styles/bootstrap-theme.css">
     </head>
     <body>
-        <h1>Hello world</h1>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="/#/">NoteWrangler</a>
+                    </div>
+                </div>
+                <nw-page-nav></nw-page-nav>
+            </div>
+        </nav>
+        
+        <div ng-view class="container-fluid"></div>
     </body>
     <!--        Vendor-->
     <script src="assets/javascript/vendor/jquery-2.2.0.min.js" type="text/javascript"></script>
@@ -17,6 +28,20 @@
     <script src="assets/javascript/app.js" type="text/javascript"></script>
     <script src="assets/javascript/routes.js" type="text/javascript"></script>
     <!--    Directives-->
+    <script src="assets/javascript/directives/nwPageNav.js" type="text/javascript"></script>
+    <script src="assets/javascript/directives/nwCategorySelector.js" type="text/javascript"></script>
     <!--    Controllers-->
+    <script src="assets/javascript/controllers/notesShowController.js" type="text/javascript"></script>
+    <script src="assets/javascript/controllers/notesCreateController.js" type="text/javascript"></script>
+    <script src="assets/javascript/controllers/notesEditController.js" type="text/javascript"></script>
+    <script src="assets/javascript/controllers/notesIndexController.js" type="text/javascript"></script>
+    <script src="assets/javascript/controllers/usersIndexController.js" type="text/javascript"></script>
+    <script src="assets/javascript/controllers/usersShowController.js" type="text/javascript"></script>
+    <!--    Filters-->
+    <script src="assets/javascript/filters/categoryFilter.js" type="text/javascript"></script>
     <!--    Services-->
+    <script src="assets/javascript/services/note.js" type="text/javascript"></script>
+    <script src="assets/javascript/services/user.js" type="text/javascript"></script>
+    <script src="assets/javascript/services/category.js" type="text/javascript"></script>
+    
 </html>
